@@ -1,0 +1,52 @@
+.book-carousel {
+  position: relative;
+  padding: 0 0 3rem;
+}
+
+.book-carousel .swiper {
+  padding: 1rem 0 2.5rem;
+}
+
+.book-carousel .swiper-button-next,
+.book-carousel .swiper-button-prev {
+  color: var(--primary-color);
+  background: var(--bg-white);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  box-shadow: var(--shadow-md);
+}
+
+.book-carousel .swiper-button-next:after,
+.book-carousel .swiper-button-prev:after {
+  font-size: 1.2rem;
+}
+
+.book-carousel .swiper-button-next:hover,
+.book-carousel .swiper-button-prev:hover {
+  background: var(--primary-color);
+  color: white;
+}
+
+.book-carousel .swiper-pagination-bullet {
+  background: var(--text-secondary);
+  opacity: 0.5;
+}
+
+.book-carousel .swiper-pagination-bullet-active {
+  background: var(--primary-color);
+  opacity: 1;
+}
+
+.no-books {
+  text-align: center;
+  padding: 4rem 0;
+  color: var(--text-secondary);
+}
+
+@media (max-width: 768px) {
+  .book-carousel .swiper-button-next,
+  .book-carousel .swiper-button-prev {
+    display: none;
+  }
+}
